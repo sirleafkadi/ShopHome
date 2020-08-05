@@ -2,10 +2,14 @@
 require("model.php");
 
 class View extends Model{
-   
+ 
+/////Importing Nav View/////////////
+function nav(){
+  return include'views/nav.php';
+}
 /////Checking Database For Error/////////////
-public function check_re_db(){
-       $array=parent::check_reg_db();
+public function database(){
+       $array=parent::sql_db();
 
      if($array['is_error']==true){  $ray=array(); 
         $ray['is_error']=$array['is_error']; 

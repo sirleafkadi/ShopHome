@@ -5,13 +5,13 @@
 class Database{
 
     static $is_error=false;
-    static $array=array("db_msg"=>"", "ajax_pdo"=>"");
+    static $array=array("db_msg"=>"", "pdo"=>"");
 
-protected function reg_db(){
+protected function sql_db(){
     
     try{
-        $array["reg_pdo"] = new PDO('mysql: host=localhost; port=3308 dbname=shophome_db; charset=utf8', 'developer', 'Moneymoney27');
-        $array["reg_pdo"]->setAttribute(PDO::ATTR_ERRMODE,
+        $array["pdo"] = new PDO('mysql: host=localhost; port=3308 dbname=shophome_db; charset=utf8', 'developer', 'Moneymoney27');
+        $array["pdo"]->setAttribute(PDO::ATTR_ERRMODE,
         PDO::ERRMODE_EXCEPTION);
        
         $array['is_error']=self::$is_error;

@@ -1,5 +1,5 @@
 
-<title>ShopHom</title>
+<title>GGsminks</title>
 	<meta charset="UTF-8">
 	<meta name="description" content=" Divisima | eCommerce Template">
 	<meta name="keywords" content="divisima, eCommerce, creative, html">
